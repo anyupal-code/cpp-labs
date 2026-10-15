@@ -1,0 +1,16 @@
+[2026-10-15 19:30:32] [INFO] [string ctor (target)] id=1 this=0x7ffe4694cb00 value="hello" alive=1
+[2026-10-15 19:30:32] [INFO] [cstr ctor (delegating)] id=1 this=0x7ffe4694cb00 alive=1
+[2026-10-15 19:30:32] [INFO] [string ctor (target)] id=2 this=0x7ffe4694cb30 value="world" alive=2
+[2026-10-15 19:30:32] [INFO] [cstr ctor (delegating)] id=2 this=0x7ffe4694cb30 alive=2
+[2026-10-15 19:30:32] [INFO] [operator<<] id=1
+[2026-10-15 19:30:32] [INFO] [operator<<] id=2
+[2026-10-15 19:30:32] [INFO] [operator==] id=1 vs id=2
+[2026-10-15 19:30:32] [INFO] [operator!=] id=1 vs id=2
+[2026-10-15 19:30:32] [INFO] [operator==] id=1 vs id=2
+[2026-10-15 19:30:32] [INFO] [operator<] id=1 vs id=2
+[2026-10-15 19:30:32] [INFO] [operator+] id=1 + id=2
+[2026-10-15 19:30:32] [INFO] [string ctor (target)] id=3 this=0x7ffe4694cb60 value="helloworld" alive=3
+[2026-10-15 19:30:32] [INFO] [operator<<] id=3
+[2026-10-15 19:30:32] [INFO] [dtor] id=3 this=0x7ffe4694cb60 alive=2
+[2026-10-15 19:30:32] [INFO] [dtor] id=2 this=0x7ffe4694cb30 alive=1
+[2026-10-15 19:30:32] [INFO] [dtor] id=1 this=0x7ffe4694cb00 alive=0

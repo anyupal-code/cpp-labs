@@ -1,0 +1,22 @@
+[2026-10-15 19:36:08] [INFO] --- push_back(TrackedString("temp")) ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=11 this=0x7ffd7273b9b0 value="temp" alive=1
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=11 this=0x7ffd7273b9b0 alive=1
+[2026-10-15 19:36:08] [INFO] [move ctor] id=12 this=0x2b238cd0 from id=11 alive=2
+[2026-10-15 19:36:08] [INFO] [dtor] id=11 this=0x7ffd7273b9b0 alive=1
+[2026-10-15 19:36:08] [INFO] --- TrackedString ts("str"); push_back(ts) ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=13 this=0x7ffd7273b720 value="str" alive=2
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=13 this=0x7ffd7273b720 alive=2
+[2026-10-15 19:36:08] [INFO] [copy ctor] id=14 this=0x2b238cf8 from id=13 alive=3
+[2026-10-15 19:36:08] [INFO] --- emplace_back("temp") ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=15 this=0x2b238d20 value="temp" alive=4
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=15 this=0x2b238d20 alive=4
+[2026-10-15 19:36:08] [INFO] --- emplace_back(TrackedString("temp")) ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=16 this=0x7ffd7273ba70 value="temp" alive=5
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=16 this=0x7ffd7273ba70 alive=5
+[2026-10-15 19:36:08] [INFO] [move ctor] id=17 this=0x2b238d48 from id=16 alive=6
+[2026-10-15 19:36:08] [INFO] [dtor] id=16 this=0x7ffd7273ba70 alive=5
+[2026-10-15 19:36:08] [INFO] [dtor] id=13 this=0x7ffd7273b720 alive=4
+[2026-10-15 19:36:08] [INFO] [dtor] id=12 this=0x2b238cd0 alive=3
+[2026-10-15 19:36:08] [INFO] [dtor] id=14 this=0x2b238cf8 alive=2
+[2026-10-15 19:36:08] [INFO] [dtor] id=15 this=0x2b238d20 alive=1
+[2026-10-15 19:36:08] [INFO] [dtor] id=17 this=0x2b238d48 alive=0

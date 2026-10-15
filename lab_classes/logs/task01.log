@@ -1,0 +1,8 @@
+[2026-10-15 19:09:59] [ERROR] ERROR message
+[2026-10-15 19:09:59] [WARNING] WARNING message
+[2026-10-15 19:09:59] [INFO] INFO message
+[2026-10-15 19:09:59] [DEBUG] DEBUG message
+[2026-10-15 19:09:59] [ERROR] ERROR после setLevel(WARNING)
+[2026-10-15 19:09:59] [WARNING] WARNING после setLevel(WARNING)
+[2026-10-15 19:09:59] [INFO] Проверка Singleton: адрес logger  = 4424672
+[2026-10-15 19:09:59] [INFO] Проверка Singleton: адрес logger2 = 4424672

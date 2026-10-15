@@ -1,0 +1,28 @@
+[2026-10-15 19:36:08] [INFO] --- push_back(TrackedString("temp")) ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=1 this=0x7ffd7273b810 value="temp" alive=1
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=1 this=0x7ffd7273b810 alive=1
+[2026-10-15 19:36:08] [INFO] [move ctor] id=2 this=0x2b238920 from id=1 alive=2
+[2026-10-15 19:36:08] [INFO] [dtor] id=1 this=0x7ffd7273b810 alive=1
+[2026-10-15 19:36:08] [INFO] --- TrackedString ts("str"); push_back(ts) ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=3 this=0x7ffd7273b720 value="str" alive=2
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=3 this=0x7ffd7273b720 alive=2
+[2026-10-15 19:36:08] [INFO] [copy ctor] id=4 this=0x2b238be8 from id=3 alive=3
+[2026-10-15 19:36:08] [INFO] [move ctor] id=5 this=0x2b238bc0 from id=2 alive=4
+[2026-10-15 19:36:08] [INFO] [dtor] id=2 this=0x2b238920 alive=3
+[2026-10-15 19:36:08] [INFO] --- emplace_back("temp") ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=6 this=0x2b238c70 value="temp" alive=4
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=6 this=0x2b238c70 alive=4
+[2026-10-15 19:36:08] [INFO] [move ctor] id=7 this=0x2b238c20 from id=5 alive=5
+[2026-10-15 19:36:08] [INFO] [dtor] id=5 this=0x2b238bc0 alive=4
+[2026-10-15 19:36:08] [INFO] [move ctor] id=8 this=0x2b238c48 from id=4 alive=5
+[2026-10-15 19:36:08] [INFO] [dtor] id=4 this=0x2b238be8 alive=4
+[2026-10-15 19:36:08] [INFO] --- emplace_back(TrackedString("temp")) ---
+[2026-10-15 19:36:08] [INFO] [string ctor (target)] id=9 this=0x7ffd7273b8d0 value="temp" alive=5
+[2026-10-15 19:36:08] [INFO] [cstr ctor (delegating)] id=9 this=0x7ffd7273b8d0 alive=5
+[2026-10-15 19:36:08] [INFO] [move ctor] id=10 this=0x2b238c98 from id=9 alive=6
+[2026-10-15 19:36:08] [INFO] [dtor] id=9 this=0x7ffd7273b8d0 alive=5
+[2026-10-15 19:36:08] [INFO] [dtor] id=3 this=0x7ffd7273b720 alive=4
+[2026-10-15 19:36:08] [INFO] [dtor] id=7 this=0x2b238c20 alive=3
+[2026-10-15 19:36:08] [INFO] [dtor] id=8 this=0x2b238c48 alive=2
+[2026-10-15 19:36:08] [INFO] [dtor] id=6 this=0x2b238c70 alive=1
+[2026-10-15 19:36:08] [INFO] [dtor] id=10 this=0x2b238c98 alive=0

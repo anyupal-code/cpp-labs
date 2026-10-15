@@ -1,0 +1,2 @@
+[2026-10-15 19:19:42] [INFO] [string ctor] id=3 this=0x7ffeeebfd9d0 value="hello" alive=1
+[2026-10-15 19:19:42] [INFO] [dtor] id=3 this=0x7ffeeebfd9d0 alive=0
